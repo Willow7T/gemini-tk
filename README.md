@@ -1,5 +1,5 @@
 # Gemini hackathon starter
-The original start repository can be found [here](https://github.com/Arize-ai/gemini-hackathon)
+The original start repository can be found [here](https://github.com/Arize-ai/gemini-hackathon).
 
 ## Upstream credit
 

@@ -4,8 +4,8 @@ import os
 
 VALID_ISSUES = {
     "QUESTION_NOT_FULLY_ANSWERED",
-    "MISSING_TREATMENT",
-    "MISSING_PREVENTION",
+    # "MISSING_TREATMENT",
+    # "MISSING_PREVENTION",
     "MISSING_CONFIDENCE",
     "CONTRADICTS_PREDICTION",
     "NO_DIRECT_ANSWER",
@@ -49,7 +49,7 @@ Allowed issues:
 {", ".join(VALID_ISSUES)}
 """
 
-    result = client.models.generate_content(
+    result = get_client().models.generate_content(
         model="gemini-2.5-flash",
         contents=prompt,
     )

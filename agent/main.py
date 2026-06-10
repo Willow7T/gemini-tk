@@ -1,59 +1,103 @@
-# Copyright 2025 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-"""One ADK turn; tracing via ``instrumentation.setup_tracing``."""
-
-from __future__ import annotations
-
 import asyncio
-import secrets
+import os
 import sys
+import uuid
 from pathlib import Path
-
 from dotenv import load_dotenv
 
-load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+load_dotenv()
 
 from google.adk.runners import InMemoryRunner
 from google.genai import types
 
 from instrumentation import setup_tracing
-from shopping_demo.agent import root_agent
+from plant_agent.agent import root_agent
 
 
-async def run_turn(user_text: str) -> None:
-    setup_tracing()
-    app_name, user_id, session_id = "hackathon_shopping", "local_user", secrets.token_hex(8)
+async def run_turn(image_path: str, user_question: str = None) -> None:
+    setup_tracing() 
+    
+    app_name = "plant_disease_hackathon"
+    session_id = f"session_{uuid.uuid4().hex[:8]}"
+    user_id = "local_user"
+
     runner = InMemoryRunner(agent=root_agent, app_name=app_name)
-    await runner.session_service.create_session(
-        app_name=app_name, user_id=user_id, session_id=session_id
-    )
-    async for _ in runner.run_async(
+    
+    try:
+        await runner.session_service.create_session(
+            app_name=app_name, user_id=user_id, session_id=session_id
+        )
+    except Exception as e:
+        print(f"Session creation warning: {e}")
+        pass
+
+    if user_question:
+        user_text = f"Please analyze this plant image: {image_path}\nUser Question: {user_question}"
+    else:
+        user_text = f"Please analyze this plant image: {image_path}"
+    
+    print(f"\n--- Processing Agent Session ---")
+    print(f"Image Path: {image_path}")
+    if user_question:
+        print(f"User Text Query: {user_question}")
+    print(f"-----------------------------------------\n")
+
+    new_message = types.Content(role="user", parts=[types.Part(text=user_text)])
+
+ 
+    all_events = []
+    events = runner.run(
         user_id=user_id,
         session_id=session_id,
-        new_message=types.Content(role="user", parts=[types.Part(text=user_text)]),
-    ):
-        pass
+        new_message=new_message
+    )
+
+    for event in events:
+        all_events.append(event)
+        # Print tool calls immediately
+        if hasattr(event, 'model_response') and event.model_response:
+            if hasattr(event.model_response, 'candidates'):
+                for candidate in event.model_response.candidates:
+                    if hasattr(candidate, 'content') and candidate.content:
+                        for part in candidate.content.parts:
+                            if hasattr(part, 'function_call') and part.function_call:
+                                print(f"  🔧 Calling {part.function_call.name}...")
+    
+    print("\n Chat Response to the Question: \n")
+    
+    session = await runner.session_service.get_session(
+        app_name=app_name, user_id=user_id, session_id=session_id
+    )
+    
+    final_answer = None
+    if session and session.events:
+        for event in reversed(session.events):
+            if event.author == "plant_pathologist" and event.content:
+                for part in event.content.parts:
+                    if hasattr(part, 'text') and part.text:
+                        final_answer = part.text
+                        break
+                if final_answer:
+                    break
+    
+    if final_answer:
+        print(final_answer)
+    else:
+        print("No final answer generated. The tool may have failed or the model didn't respond.")
+    
+    print("\n-----------------------------------------------------")
 
 
 def main() -> None:
-    msg = (
-        sys.argv[1]
-        if len(sys.argv) > 1
-        else "Help me find a floral summer dress under $50 and buy size M."
-    )
-    asyncio.run(run_turn(msg))
+    if len(sys.argv) < 2:
+        print("Usage: python main.py <path_to_image> [optional_question]")
+        return
+    
+    image_path = sys.argv[1]
+    user_question = " ".join(sys.argv[2:]) if len(sys.argv) > 2 else None
+    
+    # Run the wrapper
+    asyncio.run(run_turn(image_path, user_question))
 
 
 if __name__ == "__main__":

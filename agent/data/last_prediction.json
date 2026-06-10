@@ -1,0 +1,18 @@
+{
+  "label": "Pepper,_bell___Bacterial_spot",
+  "confidence": 0.9538652896881104,
+  "top3": [
+    {
+      "label": "Pepper,_bell___Bacterial_spot",
+      "confidence": 0.9538652896881104
+    },
+    {
+      "label": "Pepper,_bell___healthy",
+      "confidence": 0.01026358362287283
+    },
+    {
+      "label": "Peach___Bacterial_spot",
+      "confidence": 0.008982055820524693
+    }
+  ]
+}

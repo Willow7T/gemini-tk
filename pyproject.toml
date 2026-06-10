@@ -1,7 +1,7 @@
 [project]
 name = "gemini-hackathon-tk"
 version = "0.1.0"
-description = "ADK shopping demo + Phoenix tracing for the Arize / Google Cloud hackathon track"
+description = "Plant Diesease Detection + Phoenix tracing for the Arize / Google Cloud hackathon track"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10,<3.13"

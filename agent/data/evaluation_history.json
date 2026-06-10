@@ -1,0 +1,561 @@
+[
+  {
+    "timestamp": "2026-06-07T06:41:09.789537",
+    "passed": false,
+    "issues": [
+      "MISSING_DISEASE_NAME"
+    ],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?"
+  },
+  {
+    "timestamp": "2026-06-07T06:41:16.626275",
+    "passed": false,
+    "issues": [
+      "MISSING_DISEASE_NAME"
+    ],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?"
+  },
+  {
+    "timestamp": "2026-06-07T06:58:47.732252",
+    "passed": true,
+    "issues": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?"
+  },
+  {
+    "timestamp": "2026-06-07T07:04:40.177021",
+    "passed": false,
+    "issues": [
+      "MISSING_DISEASE_NAME"
+    ],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?"
+  },
+  {
+    "timestamp": "2026-06-07T07:05:29.766025",
+    "passed": false,
+    "issues": [
+      "MISSING_DISEASE_NAME"
+    ],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?"
+  },
+  {
+    "timestamp": "2026-06-07T07:14:52.406393",
+    "passed": true,
+    "issues": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?"
+  },
+  {
+    "timestamp": "2026-06-07T07:28:54.728003",
+    "passed": false,
+    "issues": [
+      "MISSING_DISEASE_NAME"
+    ],
+    "disease": "Pepper,_bell___Bacterial_spot",
+    "question": "What disease is this and can it spread?"
+  },
+  {
+    "timestamp": "2026-06-07T07:29:06.623291",
+    "passed": false,
+    "issues": [
+      "MISSING_DISEASE_NAME"
+    ],
+    "disease": "Pepper,_bell___Bacterial_spot",
+    "question": "What disease is this and can it spread?"
+  },
+  {
+    "timestamp": "2026-06-07T08:37:26.104656",
+    "passed": true,
+    "issues": [],
+    "disease": "Pepper,_bell___Bacterial_spot",
+    "question": "What disease is this and what can it do?"
+  },
+  {
+    "timestamp": "2026-06-07T09:02:12.267736",
+    "passed": true,
+    "issues": [],
+    "disease": "Pepper,_bell___Bacterial_spot",
+    "question": "What disease is this and what can it do?"
+  },
+  {
+    "timestamp": "2026-06-07T14:30:38.786533",
+    "passed": true,
+    "issues": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T14:30:38.788563",
+    "passed": true,
+    "issues": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T14:34:39.166241",
+    "passed": true,
+    "issues": [],
+    "disease": "Potato___Early_blight",
+    "question": "can humans safely eat these potatoes?",
+    "question_type": "human_risk"
+  },
+  {
+    "timestamp": "2026-06-07T14:34:39.172600",
+    "passed": true,
+    "issues": [],
+    "disease": "Potato___Early_blight",
+    "question": "can humans safely eat these potatoes?",
+    "question_type": "human_risk"
+  },
+  {
+    "timestamp": "2026-06-07T17:22:55.446807",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:23:12.248538",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:29:33.374284",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:29:37.994744",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:34:15.093795",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Strawberry___Leaf_scorch",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:34:20.211357",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Strawberry___Leaf_scorch",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:59:13.596348",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-07T17:59:16.939913",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:23:52.374152",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:23:56.338238",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:25:53.316029",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:25:58.419393",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:28:24.587555",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:28:28.134873",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:30:18.197003",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread"
+  },
+  {
+    "timestamp": "2026-06-08T02:53:44.910929",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T02:53:49.500363",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T02:57:23.770463",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T02:57:27.728287",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:00:50.849882",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:00:56.456901",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:03:13.262427",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:03:18.262640",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:26:55.208554",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:27:24.157531",
+    "passed": false,
+    "issues": [
+      "OVERCONFIDENT"
+    ],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:28:53.765271",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:28:58.113333",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:32:24.188042",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:32:29.628387",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:37:37.817842",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:37:42.392836",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:40:46.678784",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:41:13.578937",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:43:53.342034",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:43:58.083231",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:50:42.220377",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:50:46.788921",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:57:13.279652",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:57:19.129792",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:59:29.600099",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T03:59:34.494667",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T05:09:22.070047",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  },
+  {
+    "timestamp": "2026-06-08T05:09:26.202934",
+    "passed": true,
+    "issues": [],
+    "reasoning": [],
+    "disease": "Potato___Early_blight",
+    "question": "What disease is this and can it spread to my potatoes?",
+    "question_type": "spread",
+    "original_answer": null,
+    "final_answer": null
+  }
+]

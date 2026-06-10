@@ -1,0 +1,82 @@
+[
+  {
+    "rule": "strategy_version",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.2412622
+  },
+  {
+    "rule": "total_failures",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.2412822
+  },
+  {
+    "rule": "top_failure",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.2412827
+  },
+  {
+    "rule": "recommendations",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.2412832
+  },
+  {
+    "rule": "question_patterns",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.2412834
+  },
+  {
+    "rule": "common_reasoning",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.241284
+  },
+  {
+    "rule": "flat_rules",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "rewards": [],
+    "last_used": 1780939293.241284
+  },
+  {
+    "rule": "MISSING_DISEASE_NAME",
+    "description": "Always mention the exact disease predicted by the classifier.",
+    "priority": "high",
+    "timestamp": "2026-06-08T17:21:33.241388",
+    "usage_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "last_used": 1780939293.2421217,
+    "rewards": [
+      -0.5
+    ]
+  },
+  {
+    "rule": "OVERCONFIDENT",
+    "description": "Never claim the diagnosis is certain.",
+    "priority": "low",
+    "timestamp": "2026-06-08T17:21:33.241799",
+    "usage_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "last_used": 1780939293.2418046,
+    "rewards": []
+  }
+]

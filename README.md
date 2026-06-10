@@ -5,31 +5,10 @@ The original start repository can be found [here](https://github.com/Arize-ai/ge
 # Prerequisites
 
 - Python 3.10–3.12
+- Pytorch (lastest version)
 - [uv](https://docs.astral.sh/uv/)
 - Google auth for Gemini: either `GOOGLE_API_KEY` **or** Vertex (`gcloud auth application-default login` + project/location)
 - Phoenix Cloud API key ([Phoenix](https://app.phoenix.arize.com))
-
-# 10-minute quickstart
-
-1. **Clone and install**
-  ```bash
-   cd gemini-hackathon
-   cp .env.example .env
-   # Edit .env: PHOENIX_API_KEY, PHOENIX_COLLECTOR_ENDPOINT (Hostname with /s/...), and either GOOGLE_API_KEY or Vertex settings.
-   uv sync
-  ```
-2. **Run a traced shopping turn**
-  ```bash
-   make run MESSAGE='Find a floral dress in size M'
-  ```
-3. **Open Phoenix** — project name defaults to `PHOENIX_PROJECT_NAME` (`gemini-hackathon`). Confirm LLM and tool spans appear.
-4. **(Optional) ADK CLI**
-  ```bash
-   make run-adk
-   # Find a floral dress in size M
-  ```
-   This path also loads `.env` and initializes Phoenix tracing.
-
 
 # Inspiration
 Agriculture feeds the world, but disease silently destroys up to 40% of global crop yields every year — costing farmers over $220 billion annually. What struck us wasn't just the scale of the problem, but the asymmetry of it: a farmer in a rural field has no access to the agronomists, labs, or diagnostic tools that could save their harvest.
